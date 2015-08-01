@@ -1,0 +1,40 @@
+{
+  "name": "is-button",
+  "version": "0.0.0",
+  "description": "Check if an element is a button",
+  "license": "MIT",
+  "repository": "arthurvr/is-button",
+  "author": {
+    "name": "Arthur Verschaeve",
+    "email": "contact@arthurverschaeve.be",
+    "url": "arthurverschaeve.be"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "browserify test/test.js > test/bundle.js && open test/test.html"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "button",
+    "input",
+    "element",
+    "dom",
+    "browser",
+    "browserify",
+    "node",
+    "click",
+    "jquery",
+    ":button",
+    "detect",
+    "is",
+    "check"
+  ],
+  "devDependencies": {
+    "browserify": "^11.0.1",
+    "mocha": "^2.2.5"
+  }
+}
