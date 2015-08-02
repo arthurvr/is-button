@@ -1,6 +1,6 @@
 {
   "name": "is-button",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Check if an element is a button",
   "license": "MIT",
   "repository": "arthurvr/is-button",
