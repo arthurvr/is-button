@@ -13,7 +13,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "browserify test/test.js > test/bundle.js && open test/test.html"
+    "test": "xo && browserify test/test.js > test/bundle.js && open test/test.html"
   },
   "files": [
     "index.js"
@@ -35,6 +35,13 @@
   ],
   "devDependencies": {
     "browserify": "^11.0.1",
-    "mocha": "^2.2.5"
+    "mocha": "^2.2.5",
+    "xo": "*"
+  },
+  "xo": {
+    "envs": [
+      "mocha",
+      "browser"
+    ]
   }
 }
