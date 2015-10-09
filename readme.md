@@ -15,7 +15,7 @@ $ npm install --save is-button
 ## Usage
 
 ```js
-var isButton = require('is-button');
+const isButton = require('is-button');
 
 isButton(document.querySelector('#el')); // <button id="el">Button</button>
 //=> true
