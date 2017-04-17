@@ -13,6 +13,41 @@ it('Detects <input type="button">', function () {
 	assert(isButton(fixture));
 });
 
+it('Detects <a class="button">', function () {
+	var fixture = document.createElement('a');
+	fixture.className += 'button';
+
+	assert(isButton(fixture));
+});
+
+it('Detects <a class="btn">', function () {
+	var fixture = document.createElement('a');
+	fixture.className += 'btn';
+
+	assert(isButton(fixture));
+});
+
+it('Detects <a class="but">', function () {
+	var fixture = document.createElement('a');
+	fixture.className += 'but';
+
+	assert(isButton(fixture));
+});
+
+it('Detects <a class="b">', function () {
+	var fixture = document.createElement('a');
+	fixture.className += 'b';
+
+	assert(isButton(fixture));
+});
+
+it('Should trim whitespaces', function () {
+	var fixture = document.createElement('a');
+	fixture.className += ' button   ';
+
+	assert(isButton(fixture));
+});
+
 it('Doesn\'t detect any other elements', function () {
 	assert(!isButton(document.createElement('strong')));
 
